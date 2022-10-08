@@ -1,5 +1,5 @@
 {
-  "name": "s2t",
+  "name": "s2t-chinese",
   "version": "0.0.1",
   "description": "A tool to convert Simplified Chinese and Traditional Chinese to each other",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yang1206/s2t.git"
+    "url": "git+https://github.com/yang1206/s2t-chinese.git"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -37,9 +37,9 @@
   "author": "Yang1206",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yang1206/s2t/issues"
+    "url": "https://github.com/yang1206/s2t-chinese/issues"
   },
-  "homepage": "https://github.com/yang1206/s2t#readme",
+  "homepage": "https://github.com/yang1206/s2t-chinese#readme",
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.1",
     "@rollup/plugin-alias": "^3.1.9",
