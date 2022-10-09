@@ -1,5 +1,9 @@
 import { chinese as zhData } from './lang/zh'
-
+interface Custom {
+  src: string
+  des: string
+}
+export type CustomStr = Array<Custom>
 /**
  * 简体字
  */
@@ -11,7 +15,14 @@ const S = zhData.S;
 const T = zhData.T;
 
 
-const tranStr = (str: string, toT: boolean): string => {
+const tranStr = (str: string, toT: boolean, custom?: CustomStr): string => {
+  if (custom) {
+    for (let s = 0; s < custom.length; s++) {
+      if (str.includes(custom[s].src)) {
+        str = str.replaceAll(custom[s].src, custom[s].des)
+      }
+    }
+  }
   let src;
   let des;
   let i: number;
@@ -46,10 +57,18 @@ const tranStr = (str: string, toT: boolean): string => {
   return result;
 }
 
-export const Chinese = (str: string, type: 's2t' | 't2s') => {
+
+
+export const Chinese = (str: string, type: 's2t' | 't2s', custom?: CustomStr) => {
   if (type === 's2t') {
+    if (custom && custom.length !==0) {
+      return tranStr(str, true, custom)
+    }
     return tranStr(str, true)
   } else if (type === 't2s') {
+    if (custom && custom.length !== 0) {
+      return tranStr(str, false, custom)
+    }
     return tranStr(str, false)
   }
 }
