@@ -52,7 +52,6 @@ const tranStr = (str: string, toT: boolean): string => {
 export const Chinese = {
   /**
    *
-   * @param {(str,custom) => string}
    * @param {string} str 需要转换的字符
    * @param {CustomStr} custom 自定义的字符
    * @returns {string}
@@ -71,7 +70,6 @@ export const Chinese = {
   },
   /**
    *
-   * @param {(str,custom) => string}
    * @param {string} str 需要转换的字符
    * @param {CustomStr} custom 自定义的字符
    * @returns {string}
