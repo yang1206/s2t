@@ -1,6 +1,6 @@
 {
   "name": "s2t-chinese",
-  "version": "0.0.3-beta.0",
+  "version": "0.0.4",
   "description": "A tool to convert Simplified Chinese and Traditional Chinese to each other",
   "scripts": {
     "build": "rollup -c",
