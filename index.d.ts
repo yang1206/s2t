@@ -6,7 +6,6 @@ declare type CustomStr = Array<Custom>;
 declare const Chinese: {
     /**
      *
-     * @param {(str,custom) => string}
      * @param {string} str 需要转换的字符
      * @param {CustomStr} custom 自定义的字符
      * @returns {string}
@@ -14,7 +13,6 @@ declare const Chinese: {
     s2t: (str: string, custom?: CustomStr) => string;
     /**
      *
-     * @param {(str,custom) => string}
      * @param {string} str 需要转换的字符
      * @param {CustomStr} custom 自定义的字符
      * @returns {string}
@@ -22,4 +20,4 @@ declare const Chinese: {
     t2s: (str: string, custom?: CustomStr) => string;
 };
 
-export { Chinese, CustomStr };
+export { CustomStr, Chinese as default };
