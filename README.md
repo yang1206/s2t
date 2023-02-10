@@ -1,4 +1,4 @@
-# chinese-s2t   ![version-v0.0.5](https://img.shields.io/badge/version-v0.0.5-yellow.svg)   ![license-MIT](https://img.shields.io/badge/license-MIT-green.svg)
+# s2t-chinese   ![version-v0.0.5](https://img.shields.io/badge/version-v0.0.5-yellow.svg)   ![license-MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
 [![NPM](https://nodei.co/npm/s2t-chinese.png)](https://npmjs.org/package/s2t-chinese)
 
